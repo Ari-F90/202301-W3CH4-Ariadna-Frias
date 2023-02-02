@@ -4,7 +4,7 @@ import { SerieStructure } from '../../models/serie';
 import { Component } from '../component/component';
 
 export class SeriesPending extends Component {
-  constructor(public selector: string, public series: SerieStructure) {
+  constructor(public selector: string) {
     super();
     this.template = this.createTemplate();
     this.render('afterend');
