@@ -11,8 +11,8 @@ export class Main extends Component {
     return ` <main class="main">
       <section class="series">
       <h2 class="section-title">Series list</h2>
-       </section>
-    </main>
+      </section>
+      </main>
     `;
   }
 }
