@@ -4,8 +4,7 @@ import { SerieStructure } from '../../models/serie';
 import { Component } from '../component/component';
 
 export class SeriesPending extends Component {
-  public series: SerieStructure[];
-  constructor(public selector: string) {
+  constructor(public selector: string, public series: SerieStructure) {
     super();
     this.template = this.createTemplate();
     this.render('afterend');
@@ -13,7 +12,6 @@ export class SeriesPending extends Component {
 
   render(place: globalThis.InsertPosition) {
     super.render(place);
-    this.series.filter((item) => item.watched === false);
   }
 
   createTemplate() {
