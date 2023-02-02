@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
-import { SerieStructure } from '../models/serie';
+import { SerieStructure } from '../../models/serie';
 
-import { Component } from '../components/component/component';
+import { Component } from '../component/component';
 
 export class SeriesPending extends Component {
   public series: SerieStructure[];
